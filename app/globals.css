@@ -387,6 +387,7 @@ a { text-decoration:none; color:inherit; }
   padding:3px 6px;
   border-radius:var(--radius-xs);
   flex:1;
+  min-width:0; /* Prevents input from pushing flex parent */
   transition:var(--transition);
 }
 .column-title-input:hover { background:var(--bg-glass); }
@@ -657,17 +658,15 @@ a { text-decoration:none; color:inherit; }
   .board-topbar { padding:8px 12px; }
   .board-topbar-left { gap:6px; }
   .board-title-input { font-size:15px; max-width:140px; padding:4px; }
-  .board-content { padding:12px; gap:12px; }
-  .column { min-width:275px; max-width:275px; max-height:calc(100dvh - 100px); }
-  .add-column-btn { min-width:275px; max-width:275px; }
+  .board-content { padding:12px 16px; gap:16px; }
+  .column { min-width:85vw; max-width:85vw; max-height:calc(100dvh - 100px); }
+  .add-column-btn { min-width:85vw; max-width:85vw; }
   .modal { max-width:100%; margin:10px; max-height:90vh; }
   .topbar-user span { display:none; }
   .btn-ghost { padding:6px 8px; font-size:12px; }
 }
 
 @media (max-width:480px) {
-  .column { min-width:265px; max-width:265px; }
-  .add-column-btn { min-width:265px; max-width:265px; }
   .board-title-input { max-width:110px; }
 }
 
