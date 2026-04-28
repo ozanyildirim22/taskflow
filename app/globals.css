@@ -33,7 +33,7 @@ body {
   font-family:'Inter',system-ui,-apple-system,sans-serif;
   background:var(--bg-primary);
   color:var(--text-primary);
-  min-height:100vh;
+  min-height:100dvh;
   -webkit-font-smoothing:antialiased;
 }
 
@@ -49,7 +49,7 @@ a { text-decoration:none; color:inherit; }
 
 /* ─── Auth Page ─── */
 .auth-page {
-  min-height:100vh;
+  min-height:100dvh;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -190,7 +190,7 @@ a { text-decoration:none; color:inherit; }
 
 /* ─── Dashboard ─── */
 .dashboard {
-  min-height:100vh;
+  min-height:100dvh;
   background:var(--bg-primary);
 }
 
@@ -316,7 +316,7 @@ a { text-decoration:none; color:inherit; }
 .board-card-new .plus { font-size:28px; font-weight:300; }
 
 /* ─── Board View ─── */
-.board-page { height:100vh; display:flex; flex-direction:column; }
+.board-page { height:100dvh; display:flex; flex-direction:column; }
 
 .board-topbar {
   display:flex;
@@ -366,7 +366,7 @@ a { text-decoration:none; color:inherit; }
   border-radius:var(--radius);
   display:flex;
   flex-direction:column;
-  max-height:calc(100vh - 120px);
+  max-height:calc(100dvh - 120px);
   flex-shrink:0;
 }
 
@@ -658,7 +658,7 @@ a { text-decoration:none; color:inherit; }
   .board-topbar-left { gap:6px; }
   .board-title-input { font-size:15px; max-width:140px; padding:4px; }
   .board-content { padding:12px; gap:12px; }
-  .column { min-width:275px; max-width:275px; max-height:calc(100vh - 100px); }
+  .column { min-width:275px; max-width:275px; max-height:calc(100dvh - 100px); }
   .add-column-btn { min-width:275px; max-width:275px; }
   .modal { max-width:100%; margin:10px; max-height:90vh; }
   .topbar-user span { display:none; }
