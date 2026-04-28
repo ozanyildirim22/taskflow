@@ -9,7 +9,8 @@ export default function DnDPolyfill() {
   useEffect(() => {
     // Force the polyfill on touch devices
     polyfill({
-      dragImageTranslateOverride: scrollBehaviourDragImageTranslateOverride
+      dragImageTranslateOverride: scrollBehaviourDragImageTranslateOverride,
+      holdToDrag: 200 // 200ms basılı tutunca sürükleme başlar (kaydırma ile karışmasını önler)
     });
     
     // Prevent default touch behaviors like scrolling when trying to drag
